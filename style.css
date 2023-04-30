@@ -1,0 +1,327 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+    header{
+    background-color: lightgrey;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: darkred;
+    text-decoration: underline overline;
+}
+
+
+.servicios{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.servicios li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+   
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+/*hover captura cuando el raton se entrcuentra SOBRE el elemento*/
+.servicios li:hover{
+    border-color: darkred;
+    
+}
+
+/*active captura el click del raton*/
+
+.servicios li:active{
+    border-color: green;
+}
+
+.servicios h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.servicios li:hover h2{
+    font-size: 33px;
+}
+
+.productoDescripcion{
+    font-size: 18px;
+
+}
+
+.productoPRecio{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+    
+}
+
+.copyright{
+    color:white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+
+form{
+    margin: 40px 0;
+
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.inputPAdron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: green ;
+    transform: scale(1.2) rotate(70deg);
+}
+
+table{
+    margin: 40px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*CSS para pagina index*/
+
+.banner{
+    width: 100%;
+}
+
+/*Selector > , para acceder a los hijos de determinado elemento. Por ejemplo, para acceder todos los p dentro del main:*/
+main > p{
+    background: red;
+}
+
+/*Selector +, para acceder al primer hermano de determinado elemento. Por ejemplo, para acceder el primer p después de una img:*/
+img + p{
+    background: yellow;
+}
+
+/*Selector ~, para acceder a todos los hermanos de determinado elemento. Por ejemplo, para acceder todos los p después de una img:
+img ~ p{
+
+}*/
+
+/*Selector not, para acceder a los elementos, excepto algunos. Por ejemplo, para acceder a todos los p dentro de main excepto el p que tiene id missao:
+.principal p:not(#mision){
+   
+}*/
+
+.principal{
+    padding: 3em 0;
+    background: white;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+        text-shadow: 2px 2px 10px red;
+}
+
+/*first-letter sirve para cambiar la primer letra de un texto*/
+.tituloPrincipal::first-letter{
+    font-weight: bold;
+}
+
+/*first-line sirve para cambiar la primer linea de un texto*/
+p::first-line{
+    font-size: bold;
+}
+
+/*before sirve para insertar una letra u simbolo al inicio de un texto*/
+.tituloPrincipal::before{
+    content: "[";
+}
+
+/*after sirve para insertar una letra u simbolo al final de un texto*/
+.tituloPrincipal::after{
+    content: "]";
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utencilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    /*se puede usar linear-gradien para hacer una degradacion de colores y tambien le podemosindicar a cuantosgrados lo queremos, queporcentaje tendra cada color y agregar los colores que queramos
+    background: linear-gradient(45deg, orange 40%, blue,red,black);*/
+    background: linear-gradient(#fefefe, #888888);
+
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapaContenido{
+    width: 940px;
+    margin: 0 auto;
+    
+
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaDiferencial{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.listaItems{
+    line-height: 1.5;
+}
+
+.listaItems::before{
+    content: "★";
+}
+
+/*fist-child se utiliza para indicar que dentro de la lista de items busque al primer "hijo" y le aplique la configuracion indicada SI SE NECESITA UN "HIJO" especifico se puede hacer nth-child() y dendo de los parentesis ponemos el numero de la posicion del "hijo" que queremos modificar*/
+
+.listaItems:first-child{
+    font-weight: bold;
+}
+
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 50%;
+    
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video{
+        width: auto;
+    }
+    .listaDiferencial, .imagenDiferenciales{
+        width: 100%;
+    }
+}
+
+
+

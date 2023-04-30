@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagenes/icono.png"  type="image/x-icon">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleChallenge.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>Encriptador Martin Espino</title>
+    </head>
+    <body>
+        
+        <header>
+            <div id="logo">
+                <img src="imagenes/Vector.png" alt="imagen loco alura">
+            </div>
+            <div id="nombre">
+                <p>Encriptador Espino</p> 
+            </div>
+        </header>
+        <section class="forma">
+            <div class="ingresar">
+                <textarea name="textIngresar" id="inputIngresar" placeholder="Ingresa tu texto a encriptar o desencriptar"  oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')" ></textarea>
+                
+                <p>&#9888; Solo letras minusculas y sin acento.</p>
+                <div class="botones">
+                    <input type="button" value="Encriptar" class="btnEncriptar" id="btnEncriptar" onclick="encriptar()" >
+                    <input type="button" value="Desencriptar" class="btnDesencriptar" onclick="desencriptar()">
+                    <p id="copy">&#xA9;  Copyright Martin Espino</p>
+                </div>
+
+            </div>
+            <div class="mensaje" id="mensaje">
+                <div id="textoInicial">
+                    <img src="imagenes/busqueda.png" alt="imagen de busqueda" class="imgBusqueda" id="imgBusqueda">
+                    <p id="parrafoMensaje">Ingresa tu texto y oprime el boton de encriptar o desencriptar.<br></p>
+                    
+                    
+                </div>
+                <div id="textoFinal">
+                    
+                    <input class="ocultar" id="ocultar" type="button" value="Copiar texto" onclick="copiarTexto()">
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>
